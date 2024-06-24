@@ -1,31 +1,29 @@
-:root {
---cor-fundo: #2112;
---cor-principal: #2112 ;
---cor-secundaria: #2112 ;
---cor-destaque: #2bdefd ;
---cor-titulo: #d7f9ff ;
+:root{
+    --cor-fundo: #01080E ;
+    --cor-principal: #ffffff ;
+    --cor-secundaria: #212333; 
+    --cor-destaque: #5d0a72;
+    --cor-texto: #000000;
 
 }
 
-body{
+body {
     background-color: var(--cor-fundo);
-    color: var(--cor-txto);
+    color: var(--cor-texto);
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-} 
+}
 
-.caixa.principal{
-background-color: var(--color-principal);
-width: 90%;
-max-width: 600px;
-text-align: center;
-padding: 20px;
+.caixa-principal{
+    background-color: var(--cor-principal);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
 }
 
 h1{
-
-color: var(--color-destaque);
+    color: var(--cor-destaque);
 }
-
