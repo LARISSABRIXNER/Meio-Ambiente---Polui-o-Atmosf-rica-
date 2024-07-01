@@ -9,50 +9,50 @@ const perguntas = [
         enunciado: "voce esta andando na rua e precisa jogar ao lixo o seu pacote de algadinho, mas nao tem nenhuma licheira por perto. O que voce faria ?",
         alternativas: [
             {
-                texto: "esperaria par jogar no lixo ",
-                afirmacao: "afirmação"
+                texto: "esperaria para jogar no lixo",
+                afirmacao: "otimo, o cuidado com o meio ambiente e muito importante"
             },
             {
                 texto: "jogaria no chao, deixaria em qualquer lugar",
-                afirmacao: "afirmação"
+                afirmacao: "essa atitude e muito desagradavel, vamos mudar sua ideia!"
             }
         ]
     },
     {
-        enunciado: "",
+        enunciado: "Poluição visual, contaminação do solo e da água, e danos à fauna e flora local são apenas alguns dos efeitos negativos diretos do lixo jogado no chão.",
         alternativas: [
             {
-                texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
-                afirmacao: "afirmação"
+                texto: "temos que cuidadar com o lixo no chao",
+                afirmacao: "muito bem"
             },
             {
-                texto: "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
-                afirmacao: "afirmação"
+                texto: "nao e importante",
+                afirmacao: "muito ruim"
             }
         ]
     },
     {
-        enunciado: "Após a elaboração do trabalho escrito, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+        enunciado: "O descarte irregular de lixo traz inúmeros malefícios a todos, como doenças, inundações, erosão, desmoronamentos, chorume e a poluição propriamente dita. Oque  voce acha sobre isso?",
         alternativas: [
             {
-                texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-                afirmacao: "afirmação"
+                texto: "desnecesario, o meio ambiente nao precisa de cuidados",
+                afirmacao: "jogar lixo no chao nao afeta apena o maio ambiente, mas tambem aos animais e nos seres humanos"
             },
             {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
-                afirmacao: "afirmação"
+                texto: "o desccate do lixo realmente e muito importante",
+                afirmacao: "exatamente, o descarte e supe importante nao so mente para a naturesa, mas para nos seres humanos tambem"
             }
         ]
     },
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado: "moscas, baratas, mosquitos e ratos podem transmitir doenças como a febre tifoide, cólera, amebíase, disenteria, giardíase, ascaridíase, leishmaniose, febre amarela, dengue, malária, leptospirose, sao alguns problemas que o descarte irregular do lixo poe nos causar",
         alternativas: [
             {
-                texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
+                texto: "",
                 afirmacao: "afirmação"
             },
             {
-                texto: "Criar uma imagem utilizando um gerador de imagem de IA.",
+                texto: "vou cuidar mais, e nao irei e nem deixarei ninguem a jogar lixo no chao",
                 afirmacao: "afirmação"
             }
         ]
@@ -61,7 +61,7 @@ const perguntas = [
         enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda da IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz? ",
         alternativas: [
             {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
+                texto: "Poluição visual, contaminação do solo e da água, e danos à fauna e flora local são apenas alguns dos efeitos negativos diretos do lixo jogado no chão. ",
                 afirmacao: "afirmação"
             },
             {
@@ -105,7 +105,7 @@ function respostaSelecionada(opcaoSelecionada) {
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "Em 2049...";
+    caixaPerguntas.textContent = "Nao herdamos a terra de nossos antepassados, mas a tomamos emprestada de nossos descendentes";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
