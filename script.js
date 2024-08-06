@@ -6,28 +6,28 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "voce esta andando na rua e precisa jogar ao lixo o seu pacote de algadinho, mas nao tem nenhuma licheira por perto. O que voce faria ?",
+        enunciado: "voce tem o costume de fazer o descarte correto do lixo?",
         alternativas: [
             {
-                texto: "esperaria para jogar no lixo",
-                afirmacao: "otimo, o cuidado com o meio ambiente e muito importante"
+                texto: "Sim",
+                afirmacao: "otimo, o cuidado com o descarte correto do lixo e fundamental."
             },
             {
-                texto: "jogaria no chao, deixaria em qualquer lugar",
-                afirmacao: "essa atitude e muito desagradavel, vamos mudar sua ideia!"
+                texto: "nao",
+                afirmacao: "e muito importatente fazer o descarte correto dos lixos."
             }
         ]
     },
     {
-        enunciado: "Poluição visual, contaminação do solo e da água, e danos à fauna e flora local são apenas alguns dos efeitos negativos diretos do lixo jogado no chão.",
+        enunciado: "quando quebra algo de vidro",
         alternativas: [
             {
-                texto: "temos que cuidadar com o lixo no chao",
-                afirmacao: "muito bem"
+                texto: "coloco sempre dentro de alguma caixinha ",
+                afirmacao: "o cuidado com "
             },
             {
-                texto: "nao e importante",
-                afirmacao: "muito ruim"
+                texto: "jogo no lixo, junto com os outros residuos",
+                afirmacao: "misturar os residuos, tais como resto de comida, recipientes (garrafa pet, vidro, papel...), prejudica "
             }
         ]
     },
@@ -65,7 +65,7 @@ const perguntas = [
                 afirmacao: "afirmação"
             },
             {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
+                texto: "",
                 afirmacao: "afirmação"
             }
         ]
@@ -75,7 +75,7 @@ const perguntas = [
 
 let atual = 0;
 let perguntaAtual;
-let historiaFinal = "";
+let historiaFinal = "o meio ambiente importa, sim !";
 
 function mostraPergunta() {
     if (atual >= perguntas.length) {
@@ -105,7 +105,7 @@ function respostaSelecionada(opcaoSelecionada) {
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "Nao herdamos a terra de nossos antepassados, mas a tomamos emprestada de nossos descendentes";
+    caixaPerguntas.textContent = "'Nao herdamos a terra de nossos antepassados, mas a tomamos emprestada de nossos descendentes'";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
