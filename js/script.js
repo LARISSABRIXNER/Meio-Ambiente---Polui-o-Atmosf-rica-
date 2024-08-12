@@ -1,9 +1,12 @@
+import {aleatorio} from './aleatorio.js';
+import {perguntas} from './perguntas'
+
 const caixaPrincipal = document.querySelector(".caixa-principal");
 const caixaPerguntas = document.querySelector(".caixa-perguntas");
 const caixaAlternativas = document.querySelector(".caixa-alternativas");
 const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
-
+const botaojogarnovamente = document.querySelector(".novamente-btn");
 
 
 
@@ -30,7 +33,7 @@ function mostraAlternativas(){
         caixaAlternativas.appendChild(botaoAlternativas);
     }
 }
-
+<script type="module"src="js/script.js"></script>
 function respostaSelecionada(opcaoSelecionada) {
     const afirmacoes = aleatorio (opcaoSelecionada);
     historiaFinal += afirmacoes + " ";
@@ -44,6 +47,7 @@ function mostraResultado() {
     caixaAlternativas.textContent = "";
 }
 
-
-
+function jogarnovamente(){
+    atual= 0;
+}
 mostraPergunta();
