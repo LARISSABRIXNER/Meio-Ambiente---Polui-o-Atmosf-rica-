@@ -1,6 +1,6 @@
-
-const perguntas = [
+export const perguntas = [
     {
+
         enunciado: "voce tem o costume de fazer o descarte correto do lixo?",
         alternativas: [
             {
