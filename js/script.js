@@ -1,12 +1,30 @@
+import  {aleatorio, none} from './aleatorio.js';
+import  {perguntas} from './perguntas.js';
+
 const caixaPrincipal = document.querySelector(".caixa-principal");
 const caixaPerguntas = document.querySelector(".caixa-perguntas");
 const caixaAlternativas = document.querySelector(".caixa-alternativas");
 const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
+const botaojogarnovamente = document.querySelector(".novamente-btn");
+const botaoinicial = document.querySelector(".iniciar-btn");
+const telainicial= document.querySelector(".tela-inicial");
 
 let atual = 0;
 let perguntaAtual;
-let historiaFinal = "o meio ambiente importa, sim !";
+let historiaFinal = "";
+
+botaoiniciar.addEventListener('click', iniciajogo);
+
+function iniciajogo (){
+    atual= 0;
+    historiaFinal="";
+    telainicial.style.display = 'none';
+    caixaPerguntas.classList.remove ("motrar");
+    caixaalternativas.classList.remove ("motrar");
+    caixaResultado.classList.remove ("motrar");
+    mostraperguntas();
+}
 
 function mostraPergunta() {
     if (atual >= perguntas.length) {
@@ -50,4 +68,11 @@ function jogarNovamente (){
     mostraPergunta ();
 }
 
+function substituinone (){
+    for (const pegunta of perguntas){
+        perguntaAtual.enunciado= pergunta.enunciado.replace(/voce/g, none);
+    }
+}
+
+substituinone();
 mostraPergunta();
